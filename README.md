@@ -1,6 +1,6 @@
 # Docker Lambda Sample
 
-このリポジトリは、Lambda を Docker でローカル実行するサンプルです。
+Docker で構築した Lambda の開発・本番環境を一貫して運用できるサンプルコード
 
 ## ディレクトリ構成
 
