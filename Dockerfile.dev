@@ -1,0 +1,11 @@
+FROM public.ecr.aws/lambda/python:3.12
+
+# 依存パッケージのインストール
+COPY requirements.txt .
+RUN python3.12 -m pip install -r requirements.txt
+
+# ソースコードをコンテナにコピー
+COPY app ./
+
+# 開発用エントリーポイント
+ENTRYPOINT ["python", "entrypoint.py"]
